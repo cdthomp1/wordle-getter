@@ -1,17 +1,24 @@
 {
   "name": "wordle-getter",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdthomp1/wordle-getter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdthomp1/wordle-getter/issues"
+  },
+  "homepage": "https://github.com/cdthomp1/wordle-getter#readme",
   "dependencies": {
-    "next": "12.1.0",
-    "puppeteer": "^13.4.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "swr": "^1.2.2"
+    "express": "^4.17.3",
+    "puppeteer": "^13.4.1"
   }
 }
