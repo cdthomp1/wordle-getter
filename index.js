@@ -1,14 +1,4 @@
 const puppeteer = require('puppeteer');
-
-(async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto('https://example.com');
-    await page.screenshot({ path: 'example.png' });
-
-    await browser.close();
-})();
-
 const express = require('express')
 const app = express()
 const port = 3000
@@ -22,7 +12,6 @@ app.get('/', async (req, res) => {
 
     const localStorage = await page.evaluate(() => Object.assign({}, window.localStorage));
     state = JSON.parse(localStorage['nyt-wordle-state']);
-
 
     await browser.close();
 
